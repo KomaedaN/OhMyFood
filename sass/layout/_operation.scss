@@ -1,0 +1,33 @@
+@import "../utils/variable";
+.operation{
+    padding-top: 2rem;
+    width: 90%;
+    margin: auto;
+        &__puce{
+            display: flex;
+            align-items: center;
+            margin-bottom: 5%;
+        }
+        &__number{
+            border-radius: 2rem;
+            position: absolute;
+            padding: 0 1% 0 1%;
+            margin-left: 0.5rem;
+            background: $color-primary;
+            color: white;
+        }
+        &__block{
+            display: flex;
+            background: $color-back;
+            border-radius: 1rem;
+            align-items: center;
+            margin-left: 2rem;
+            width: 90%;
+            margin: auto;
+            padding: 0.5rem 0 0.5rem 0;
+        }
+        &__icon{
+            padding-left: 10%;
+            margin-right: 5%;
+        }
+}

@@ -43,4 +43,59 @@ header {
   font-size: 1.2rem;
 }
 
+.about {
+  background: #f6f6f6;
+  padding: 3rem 0 3rem 0;
+}
+.about h2 {
+  margin-top: 0;
+  text-align: center;
+  width: 70%;
+  margin: auto;
+}
+.about p {
+  text-align: center;
+  width: 80%;
+  margin: auto;
+  padding: 1.5rem 0 1.5rem 0;
+}
+.about button {
+  display: flex;
+  margin: auto;
+  align-items: center;
+}
+
+.operation {
+  padding-top: 2rem;
+  width: 90%;
+  margin: auto;
+}
+.operation__puce {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5%;
+}
+.operation__number {
+  border-radius: 2rem;
+  position: absolute;
+  padding: 0 1% 0 1%;
+  margin-left: 0.5rem;
+  background: #9356DC;
+  color: white;
+}
+.operation__block {
+  display: flex;
+  background: #f6f6f6;
+  border-radius: 1rem;
+  align-items: center;
+  margin-left: 2rem;
+  width: 90%;
+  margin: auto;
+  padding: 0.5rem 0 0.5rem 0;
+}
+.operation__icon {
+  padding-left: 10%;
+  margin-right: 5%;
+}
+
 /*# sourceMappingURL=style.css.map */

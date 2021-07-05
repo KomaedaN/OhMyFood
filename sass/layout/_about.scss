@@ -1,3 +1,23 @@
+@import "../utils/variable";
 .about{
-    
+    background: $color-back;
+    padding: 3rem 0 3rem 0;
+
+        h2{
+            margin-top: 0;
+            text-align: center;
+            width: 70%;
+            margin: auto;
+        }
+        p{
+            text-align: center;
+            width: 80%;
+            margin: auto;
+            padding: 1.5rem 0 1.5rem 0;
+        }
+        button{
+            display: flex;
+            margin: auto;
+            align-items: center;
+        }
 }
