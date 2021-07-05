@@ -1,1 +1,10 @@
 @import "./base/typography";
+
+@import "./components/buttons";
+
+@import "./layout/body",
+        "./layout/header",
+        "./layout/about";
+
+@import "./utils/varaible";
+        

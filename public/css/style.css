@@ -1,38 +1,46 @@
-@import url("https://fonts.googleapis.com/css?family=Montserrat:100,900i");
-html, body {
-  height: 100%;
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Shrikhand&display=swap");
+h1 {
+  font-family: Shrikhand, sans-serif;
+}
+
+body {
+  font-family: Roboto, sans-serif;
+}
+
+input {
+  outline: none;
+  background-color: inherit;
+  border: none;
+  font-size: 1.2rem;
+}
+
+body {
   margin: 0;
-  padding: 0;
 }
 
-* {
-  box-sizing: border-box;
+img {
+  width: 300px;
 }
 
-.container {
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-  flex-wrap: wrap;
-}
-
-.proj-prev__heading, .form__heading {
-  font-family: "Montserrat", sans-serif;
-  font-weight: 900;
-  font-style: italic;
-  color: #fff;
-}
-
-.form {
-  background: white;
+header {
   width: 100%;
-  padding: 1rem 2rem;
 }
-.proj-prev {
-  background: #EA526F;
-  width: 100%;
-  padding: 1rem 2rem;
+
+.header__title {
+  text-align: center;
+}
+.header__title a {
+  text-decoration: none;
+  color: black;
+}
+
+.header__search {
+  background-color: #eaeaea;
+  padding: 1.3rem 0 1.3rem 0;
+  text-align: center;
+}
+.header__search i {
+  font-size: 1.2rem;
 }
 
 /*# sourceMappingURL=style.css.map */
