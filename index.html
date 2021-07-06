@@ -28,7 +28,7 @@
     <section class="about">
         <h2>Réservez le menu qui vous convient</h2>
         <p>Découvrez des restaurants d'exception, séléctionnés par nos soins.</p>
-        <button class="about__btn">Explorer nos restaurants</button>
+        <button class="about__btn"><a href="#resto">Explorer nos restaurants</a></button>
     </section>
 
     <section class="operation">
@@ -61,7 +61,8 @@
     </section>
 
     <section class="restaurant">
-      <h2>Restaurants</h2>
+        <div class="restaurant__container">
+      <h2 id="resto">Restaurants</h2>
           <div class="restaurant__grid">
 
                 <div class="restaurant__puce">
@@ -71,8 +72,8 @@
                       <img src="images/restaurants/PaletteDuGout.jpg" alt="la palette du goût"/>
                       <figcaption>
                           <h3>La palette du goût</h3>
-                          <p>Ménilmontant</p>
-                          <i class="fill far fa-heart fa-2x"></i>
+                          <i class="fill far fa-heart fa-2x restaurant__heart"></i>
+                          <p>Ménilmontant</p>                         
                       </figcaption>
                       </figure>
                       </a>
@@ -85,8 +86,8 @@
                     <img src="images/restaurants/note-enchantée.jpg" alt="la palette du goût"/>
                     <figcaption>
                         <h3>La note enchantée</h3>
+                        <i class="fill far fa-heart fa-2x restaurant__heart"></i>
                         <p>Charonne</p>
-                        <i class="fill far fa-heart fa-2x"></i>
                     </figcaption>
                     </figure>
                     </a>
@@ -98,8 +99,8 @@
                   <img src="images/restaurants/francaise.jpg" alt="la palette du goût"/>
                   <figcaption>
                       <h3>À la française</h3>
+                      <i class="fill far fa-heart fa-2x restaurant__heart"></i>
                       <p>Cité Rouge</p>
-                      <i class="fill far fa-heart fa-2x"></i>
                   </figcaption>
                   </figure>
                   </a>
@@ -111,22 +112,23 @@
                   <img src="images/restaurants/délice.jpg" alt="la palette du goût"/>
                   <figcaption>
                       <h3>Le délice des sens</h3>
+                      <i class="fill far fa-heart fa-2x restaurant__heart"></i>
                       <p>Folie-Méricourt</p>
-                      <i class="fill far fa-heart fa-2x"></i>
                   </figcaption>
                   </figure>
                   </a>
                 </div>
           </div>
+          </div>
     </section>
   </main>
 
   <footer>
-      <div class="foot__block">
-            <h3>ohmyfood</h3>
+      <div class="foot">
+            <h1>ohmyfood</h1>
             <ul>
-                 <li><a href="#"><i class="fas fa-utensils"></i> Proposer un restaurant</a></li> 
-                 <li><a href="#"><i class="fas fa-hands-helping"></i> Devenir partenaire</a></li> 
+                 <li><a href="#"><i class="fas fa-utensils foot__icon"></i> Proposer un restaurant</a></li> 
+                 <li><a href="#"><i class="fas fa-hands-helping foot__icon2"></i> Devenir partenaire</a></li> 
                  <li><a href="#">Mentions légales</a></li> 
                  <li><a href="mailto:ohmyfood@gmail.com">Contact</a></li> 
             </ul>

@@ -1,0 +1,31 @@
+@import "../utils/variable";
+footer{
+    background: $color-footer;
+}
+.foot{
+    color: white;
+    width: 90%;
+    margin: auto;
+    padding-bottom: 2.5rem;
+    padding-top: 1.5rem;
+        li{
+            padding-bottom: 0.5rem;
+        }
+        a{
+            text-decoration: none;
+            color: white;
+        }
+        h1{
+            font-size: 1.5rem;
+            margin-top: 0;
+            font-weight: normal;
+        }
+        ul{
+            margin-bottom: 0;
+            list-style-type: none;
+            padding: 0;
+        }
+        &__icon{
+            padding-right: 0.5rem;
+        }
+}

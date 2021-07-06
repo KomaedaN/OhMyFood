@@ -18,10 +18,6 @@ body {
   margin: 0;
 }
 
-img {
-  width: 300px;
-}
-
 header {
   width: 100%;
 }
@@ -63,6 +59,15 @@ header {
   display: flex;
   margin: auto;
   align-items: center;
+  background: #FF79DA;
+  border: none;
+  border-radius: 5rem;
+}
+.about button a {
+  text-decoration: none;
+  color: white;
+  padding: 1.2rem 1rem;
+  font-size: 1.1rem;
 }
 
 .operation {
@@ -79,7 +84,6 @@ header {
   border-radius: 2rem;
   position: absolute;
   padding: 0 1% 0 1%;
-  margin-left: 0.5rem;
   background: #9356DC;
   color: white;
 }
@@ -89,13 +93,101 @@ header {
   border-radius: 1rem;
   align-items: center;
   margin-left: 2rem;
-  width: 90%;
+  width: 95%;
   margin: auto;
   padding: 0.5rem 0 0.5rem 0;
+}
+.operation__block p {
+  font-weight: bold;
 }
 .operation__icon {
   padding-left: 10%;
   margin-right: 5%;
+}
+
+.restaurant {
+  background: #f6f6f6;
+  margin-top: 5rem;
+  padding-top: 2rem;
+  padding-bottom: 4rem;
+}
+.restaurant__container {
+  width: 90%;
+  margin: auto;
+}
+.restaurant__puce {
+  background-color: white;
+  border-radius: 1rem;
+}
+.restaurant__puce a {
+  text-decoration: none;
+  color: black;
+}
+.restaurant__new {
+  position: absolute;
+  background: #99E2D0;
+  padding: 0.5rem;
+}
+.restaurant__heart {
+  align-self: center;
+  height: 0;
+}
+.restaurant figure {
+  margin: auto;
+  margin-bottom: 2rem;
+}
+.restaurant figure img {
+  object-fit: cover;
+  width: 100%;
+  height: 13rem;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+}
+.restaurant figure figcaption {
+  display: grid;
+  grid-template-columns: 1fr 0.2fr;
+}
+.restaurant figure figcaption h3 {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  padding-left: 1rem;
+}
+.restaurant figure figcaption p {
+  margin: 0;
+  padding-bottom: 1rem;
+  padding-left: 1rem;
+}
+
+footer {
+  background: #353535;
+}
+
+.foot {
+  color: white;
+  width: 90%;
+  margin: auto;
+  padding-bottom: 2.5rem;
+  padding-top: 1.5rem;
+}
+.foot li {
+  padding-bottom: 0.5rem;
+}
+.foot a {
+  text-decoration: none;
+  color: white;
+}
+.foot h1 {
+  font-size: 1.5rem;
+  margin-top: 0;
+  font-weight: normal;
+}
+.foot ul {
+  margin-bottom: 0;
+  list-style-type: none;
+  padding: 0;
+}
+.foot__icon {
+  padding-right: 0.5rem;
 }
 
 /*# sourceMappingURL=style.css.map */
