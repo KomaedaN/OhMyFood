@@ -1,12 +1,11 @@
+@import "../utils/variable";
+@import "../utils/mixins";
+// Header Main Page
 header{
     width: 100%;
 }
 .header__title{
-    text-align: center;
-        a{
-            text-decoration: none;
-            color: black;
-        }
+    @include header-title;
 }
 .header__search{
     background-color: rgb(234, 234, 234);
@@ -17,9 +16,22 @@ header{
         }
 }
 
-// Menu header
-
-.header__food{
-        object-fit: cover;
-        width: 100%;
+// Menu Header  
+.header2{
+    display: flex;
+    align-items: baseline;
+        &__arrow{
+            color: $color-footer;
+            font-size: 1.5rem;
+            padding-left: 1rem;
+        }
+        &__title{
+            @include header-title;
+                width: 80%;
+        }    
 }
+.header2__food{
+    object-fit: cover;
+    width: 100%;
+}
+

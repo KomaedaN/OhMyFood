@@ -1,3 +1,11 @@
+@mixin header-title {
+    text-align: center;
+    margin-bottom: 0;
+        a{
+            text-decoration: none;
+            color: black;
+        }
+}
 @mixin search-command {
     display: flex;
     margin: auto;
