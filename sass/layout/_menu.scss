@@ -1,0 +1,12 @@
+@import "../utils/variable";
+@import "../utils/mixins";
+.main__container{
+    width: 90%;
+    margin: auto;
+}
+.menu{
+    
+        button{
+            @include search-command;
+        }
+}

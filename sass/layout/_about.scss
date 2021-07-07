@@ -1,4 +1,5 @@
 @import "../utils/variable";
+@import "../utils/mixins";
 .about{
     background: $color-back;
     padding: 3rem 0 3rem 0;
@@ -16,18 +17,6 @@
             padding: 1.5rem 0 1.5rem 0;
         }
         button{
-            display: flex;
-            margin: auto;
-            align-items: center;
-            background: $color-secondary;
-            border: none;
-            border-radius: 5rem;
-            
-                a{
-                    text-decoration: none;
-                    color: white;
-                    padding: 1.2rem 1rem;
-                    font-size: 1.1rem;
-                }
+            @include search-command;          
         }
 }
