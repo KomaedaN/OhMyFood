@@ -100,16 +100,52 @@ header {
   border-top-left-radius: 2rem;
   border-top-right-radius: 2rem;
   background: #f6f6f6;
+  margin-top: -2rem;
+  position: relative;
+  padding-bottom: 3rem;
 }
-.main2 .main2__container {
+.main2__container {
   width: 90%;
   margin: auto;
 }
-.main2 .main2__container h1 {
+.main2__title {
+  display: flex;
+  align-items: baseline;
+}
+.main2__title h1 {
   margin-top: 0;
   padding-top: 2rem;
+  font-weight: 300;
+}
+.main2__title i {
+  align-self: baseline;
+  margin-left: 3.5rem;
 }
 
+.menu__title {
+  border-bottom: solid;
+}
+.menu__puce {
+  background-color: white;
+  border-radius: 1rem;
+  padding: 0.6rem;
+  margin-bottom: 1rem;
+}
+.menu__puce h3 {
+  margin: 0;
+}
+.menu__flex {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+}
+.menu__flex p {
+  margin-bottom: 0.3rem;
+  margin-top: 0.5rem;
+}
+.menu__flex span {
+  font-weight: bold;
+}
 .menu button {
   display: flex;
   margin: auto;
@@ -117,6 +153,7 @@ header {
   background: #FF79DA;
   border: none;
   border-radius: 5rem;
+  margin-top: 2rem;
 }
 .menu button a {
   text-decoration: none;
