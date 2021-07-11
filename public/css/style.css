@@ -88,6 +88,7 @@ header {
   background: #FF79DA;
   border: none;
   border-radius: 5rem;
+  height: 3rem;
 }
 .about button a {
   text-decoration: none;
@@ -123,7 +124,15 @@ header {
 }
 
 .menu__title {
-  border-bottom: solid;
+  font-weight: 300;
+  margin-bottom: 0.3rem;
+}
+.menu__line {
+  border: solid;
+  border-width: 2px;
+  border-color: #99E2D0;
+  margin-bottom: 2rem;
+  width: 15%;
 }
 .menu__puce {
   background-color: white;
@@ -153,7 +162,9 @@ header {
   background: #FF79DA;
   border: none;
   border-radius: 5rem;
+  height: 3rem;
   margin-top: 2rem;
+  padding: 0 2rem;
 }
 .menu button a {
   text-decoration: none;
@@ -178,6 +189,9 @@ header {
   padding: 0 1% 0 1%;
   background: #9356DC;
   color: white;
+}
+.operation__block:hover {
+  background-color: #f5edff;
 }
 .operation__block {
   display: flex;

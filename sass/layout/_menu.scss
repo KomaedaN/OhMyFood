@@ -28,7 +28,15 @@
 }
 .menu{
         &__title{
-            border-bottom: solid;               
+            font-weight: 300;   
+            margin-bottom: 0.3rem;        
+        }
+        &__line{
+            border: solid;
+            border-width: 2px;
+            border-color: $color-tertiaire;
+            margin-bottom: 2rem;
+            width: 15%;
         }
         &__puce{
             background-color: white;
@@ -55,5 +63,6 @@
         button{
             @include search-command;
             margin-top: 2rem;
+            padding: 0 2rem;
         }
 }
