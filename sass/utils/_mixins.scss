@@ -10,14 +10,13 @@
     display: flex;
     margin: auto;
     align-items: center;
-    background: $color-secondary;
+    background: $color-primary;
     border: none;
     border-radius: 5rem;
     height: 3rem;
-        a{
-            text-decoration: none;
-            color: white;
-            padding: 1.2rem 1rem;
-            font-size: 1.1rem;
-        }
+    text-decoration: none;
+    color: white;
+    padding: 1.2rem 1rem;
+    font-size: 1.1rem;
+    cursor: pointer;
 }
