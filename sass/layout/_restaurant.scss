@@ -9,6 +9,7 @@
         margin: auto;
     }
         &__puce{
+            @include shadow;
             background-color: white;
             border-radius: 1rem;
                 a{

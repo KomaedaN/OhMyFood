@@ -4,16 +4,15 @@
     width: 90%;
     margin: auto;
         &__puce{
-            display: flex;
-            align-items: center;
             margin-bottom: 5%;
         }
         &__number{
-            border-radius: 2rem;
+            border-radius: 1rem;
             position: absolute;
-            padding: 0 1% 0 1%;
+            padding: 0.4rem 0.6rem;
             background: $color-primary;
             color: white;
+            margin-left: -15px;
         }
         &__block:hover{
             background-color:rgb(245, 237, 255);
@@ -22,6 +21,7 @@
                 }
         }
         &__block{
+            @include shadow;
             display: flex;
             background: $color-back;
             border-radius: 1rem;

@@ -39,6 +39,7 @@
             width: 15%;
         }
         &__puce{
+            @include shadow;
             background-color: white;
             border-radius: 1rem;
             padding: 0.6rem;
