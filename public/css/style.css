@@ -238,6 +238,9 @@ header {
   position: absolute;
   background: #99E2D0;
   padding: 0.5rem;
+  right: 8%;
+  border-radius: 0.5rem;
+  color: #239277;
 }
 .restaurant__heart {
   align-self: center;
@@ -254,10 +257,6 @@ header {
   border-top-left-radius: 1rem;
   border-top-right-radius: 1rem;
 }
-.restaurant figure figcaption {
-  display: grid;
-  grid-template-columns: 1fr 0.2fr;
-}
 .restaurant figure figcaption h3 {
   margin-top: 0.5rem;
   margin-bottom: 0.5rem;
@@ -267,6 +266,15 @@ header {
   margin: 0;
   padding-bottom: 1rem;
   padding-left: 1rem;
+}
+
+.figucaption__flex {
+  display: flex;
+  justify-content: space-between;
+}
+.figucaption__flex span {
+  margin-top: -1rem;
+  margin-right: 2rem;
 }
 
 footer {

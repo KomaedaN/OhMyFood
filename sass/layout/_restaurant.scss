@@ -21,6 +21,9 @@
                 position: absolute;
                 background: $color-tertiaire;
                 padding: 0.5rem;
+                right: 8%;
+                border-radius: 0.5rem;
+                color: #239277;
             }
             &__heart{
                 align-self: center;
@@ -37,13 +40,11 @@
                     border-top-right-radius: 1rem;
                 }
                     figcaption{
-                        display: grid;
-                        grid-template-columns: 1fr 0.2fr;
                         h3{
                             margin-top: 0.5rem;
                             margin-bottom: 0.5rem;
                             padding-left: 1rem;
-                        }
+                        } 
                         p{
                             margin: 0;
                             padding-bottom: 1rem;
@@ -51,4 +52,12 @@
                         }
                     }
             }
+}
+.figucaption__flex{
+    display: flex;
+    justify-content: space-between;
+        span{
+            margin-top: -1rem;
+            margin-right: 2rem;
+        }
 }
