@@ -85,7 +85,7 @@ header {
   display: flex;
   margin: auto;
   align-items: center;
-  background: linear-gradient(319deg, #9356dc 17%, #a25bdc 42%, #bc63db 53%, #ff79da 84%);
+  background: linear-gradient(0deg, #9356DC 17%, #FF79DA 94%);
   border: none;
   border-radius: 5rem;
   height: 3rem;
@@ -160,7 +160,7 @@ header {
   display: flex;
   margin: auto;
   align-items: center;
-  background: linear-gradient(319deg, #9356dc 17%, #a25bdc 42%, #bc63db 53%, #ff79da 84%);
+  background: linear-gradient(0deg, #9356DC 17%, #FF79DA 94%);
   border: none;
   border-radius: 5rem;
   height: 3rem;
@@ -275,6 +275,14 @@ header {
 .figucaption__flex span {
   margin-top: -1rem;
   margin-right: 2rem;
+}
+.figucaption__color {
+  position: absolute;
+  opacity: 0;
+}
+.figucaption__color:hover {
+  opacity: 1;
+  color: #FF79DA;
 }
 
 footer {

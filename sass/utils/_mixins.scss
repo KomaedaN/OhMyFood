@@ -1,3 +1,4 @@
+@import "../utils/variable";
 @mixin header-title {
     text-align: center;
     margin-bottom: 0;    
@@ -10,7 +11,7 @@
     display: flex;
     margin: auto;
     align-items: center;
-    background: linear-gradient(319deg, rgba(147,86,220,1) 17%, rgba(162,91,220,1) 42%, rgba(188,99,219,1) 53%, rgba(255,121,218,1) 84%);
+    background: linear-gradient(0deg, $color-primary 17%, $color-secondary 94%);
     border: none;
     border-radius: 5rem;
     height: 3rem;
@@ -23,4 +24,12 @@
 }
 @mixin shadow {
     box-shadow: -3px 1px 16px 0px #353535a1;
+}
+@mixin heart {
+    position: absolute;
+    opacity: 0;   
+        &:hover{
+            opacity: 1;
+            color: $color-secondary;
+        } 
 }
