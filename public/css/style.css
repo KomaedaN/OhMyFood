@@ -279,10 +279,19 @@ header {
 .figucaption__color {
   position: absolute;
   opacity: 0;
+  transform: scale(1);
+  transition: transform 400ms;
 }
 .figucaption__color:hover {
   opacity: 1;
-  color: #FF79DA;
+  color: #9356DC;
+  transform: scale(1.1);
+}
+.figucaption__color:hover {
+  margin-left: -1px;
+}
+.figucaption__border:hover {
+  opacity: 0;
 }
 
 footer {

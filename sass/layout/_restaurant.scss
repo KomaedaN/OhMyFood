@@ -65,6 +65,12 @@
         }
         &__color{
             @include heart; 
+                &:hover{
+                margin-left: -1px;
+                }
+        }
+        &__border:hover{
+            opacity: 0;
         }
         
 }
