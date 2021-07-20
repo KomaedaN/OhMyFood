@@ -36,6 +36,7 @@ header {
   background-color: #eaeaea;
   padding: 1.3rem 0 1.3rem 0;
   text-align: center;
+  box-shadow: inset 0px 3px 6px 0px #353535a1;
 }
 .header__search i {
   font-size: 1.2rem;
@@ -112,8 +113,8 @@ header {
 .main2__color {
   position: absolute;
   opacity: 0;
-  transform: scale(1);
-  transition: transform 400ms ease-in-out;
+  transform: scale(0.2);
+  transition: transform 500ms ease-in-out;
 }
 .main2__color:hover {
   opacity: 1;
@@ -135,6 +136,7 @@ header {
 .main2__title i {
   align-self: baseline;
   margin-left: 3.5rem;
+  cursor: pointer;
 }
 
 .menu__title {
@@ -228,6 +230,12 @@ header {
   padding-left: 10%;
   margin-right: 5%;
 }
+@media screen and (min-width: 1024px) {
+  .operation__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
 
 .restaurant {
   background: #f6f6f6;
@@ -293,8 +301,8 @@ header {
 .figucaption__color {
   position: absolute;
   opacity: 0;
-  transform: scale(1);
-  transition: transform 400ms ease-in-out;
+  transform: scale(0.2);
+  transition: transform 500ms ease-in-out;
 }
 .figucaption__color:hover {
   opacity: 1;
@@ -306,6 +314,18 @@ header {
 }
 .figucaption__color:hover + .figucaption__border {
   visibility: hidden;
+}
+
+@media screen and (min-width: 1024px) {
+  .restaurant__grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 2rem;
+    column-gap: 4rem;
+  }
+  .restaurant__grid figure {
+    margin-bottom: 0;
+  }
 }
 
 footer {
