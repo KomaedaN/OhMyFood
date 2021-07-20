@@ -68,9 +68,9 @@
                 &:hover{
                 margin-left: -1px;
                 }
-        }
-        &__border:hover{
-            opacity: 0;
+                &:hover + .figucaption__border{
+                    visibility: hidden;
+                }
         }
         
 }

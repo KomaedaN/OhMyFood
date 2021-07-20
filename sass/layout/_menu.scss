@@ -11,6 +11,12 @@
             width: 90%;
             margin: auto;
         }
+        &__color{
+            @include heart;
+            &:hover + .main2__border{
+                visibility: hidden;
+            }
+        }
         &__title{
             display: flex;
             align-items: baseline;
