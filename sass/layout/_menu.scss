@@ -32,6 +32,9 @@
                  cursor: pointer;
              }
         }
+        &__size{
+            font-size: 1.64rem;
+        }
 }
 .menu{
         &__title{
@@ -73,4 +76,34 @@
             margin-top: 2rem;
             padding: 0 2rem;
         }
+}
+//_Breakpoints_Desktop
+@include desktop{
+    .main2{
+        &__container{
+            width: 98%;
+        }
+        &__title{
+            justify-content: center;
+        }
+    }
+    .menu{
+        &__grid{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            column-gap: 1.7rem;
+        }
+        &__puce{
+            padding: 0.6rem 0.49rem;
+        }
+    }
+}
+
+//_Breakpoints_tablet
+@include tablet{
+    .main2{
+        &__title{
+            justify-content: center;
+        }
+    }
 }

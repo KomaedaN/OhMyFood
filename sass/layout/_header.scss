@@ -36,3 +36,23 @@ header{
     width: 100%;
 }
 
+//_Breakpoints_Desktop
+@include desktop{
+    .header2{
+        &__title{
+            width: 90%;
+        }
+        &__food{
+            height: 30rem;
+        }
+    }
+}
+
+//_Breakpoints_tablet
+@include tablet{
+    .header2{
+        &__food{
+            height: 25rem;
+        }
+    }
+}

@@ -66,6 +66,19 @@ header {
   width: 100%;
 }
 
+@media screen and (min-width: 1024px) {
+  .header2__title {
+    width: 90%;
+  }
+  .header2__food {
+    height: 30rem;
+  }
+}
+@media screen and (min-width: 768px) {
+  .header2__food {
+    height: 25rem;
+  }
+}
 .about {
   background: #f6f6f6;
   padding: 3rem 0 3rem 0;
@@ -138,6 +151,9 @@ header {
   margin-left: 3.5rem;
   cursor: pointer;
 }
+.main2__size {
+  font-size: 1.64rem;
+}
 
 .menu__title {
   font-weight: 300;
@@ -190,6 +206,28 @@ header {
   padding: 0 2rem;
 }
 
+@media screen and (min-width: 1024px) {
+  .main2__container {
+    width: 98%;
+  }
+  .main2__title {
+    justify-content: center;
+  }
+
+  .menu__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 1.7rem;
+  }
+  .menu__puce {
+    padding: 0.6rem 0.49rem;
+  }
+}
+@media screen and (min-width: 768px) {
+  .main2__title {
+    justify-content: center;
+  }
+}
 .operation {
   padding-top: 2rem;
   width: 90%;
@@ -327,7 +365,6 @@ header {
     margin-bottom: 0;
   }
 }
-
 footer {
   background: #353535;
 }
