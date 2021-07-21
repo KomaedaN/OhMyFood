@@ -260,7 +260,7 @@ header {
   margin-left: 2rem;
   width: 95%;
   margin: auto;
-  padding: 0.5rem 0 0.5rem 0;
+  padding: 1rem 0;
 }
 .operation__block p {
   font-weight: bold;
@@ -270,6 +270,18 @@ header {
   margin-right: 5%;
 }
 @media screen and (min-width: 1024px) {
+  .operation__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .operation__block {
+    padding: 2rem 0;
+  }
+}
+@media screen and (min-width: 768px) {
+  .operation {
+    width: 95%;
+  }
   .operation__grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -364,6 +376,16 @@ header {
   }
   .restaurant__grid figure {
     margin-bottom: 0;
+  }
+
+  #resto {
+    font-size: 2rem;
+    margin-left: 4rem;
+  }
+
+  #fonctionnement {
+    font-size: 2rem;
+    margin-left: 6rem;
   }
 }
 footer {
