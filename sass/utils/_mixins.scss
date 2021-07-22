@@ -21,6 +21,9 @@
     font-size: 1.1rem;
     cursor: pointer;
     @include shadow;
+        &:hover{
+            box-shadow: 2px 2px 9px 4px #000000;
+        }
 }
 @mixin shadow {
     box-shadow: -3px 1px 16px 0px #353535a1;

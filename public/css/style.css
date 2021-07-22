@@ -111,6 +111,9 @@ header {
   cursor: pointer;
   box-shadow: -3px 1px 16px 0px #353535a1;
 }
+.about button:hover {
+  box-shadow: 2px 2px 9px 4px #000000;
+}
 
 .main2 {
   border-top-left-radius: 2rem;
@@ -205,6 +208,9 @@ header {
   box-shadow: -3px 1px 16px 0px #353535a1;
   margin-top: 2rem;
   padding: 0 2rem;
+}
+.menu button:hover {
+  box-shadow: 2px 2px 9px 4px #000000;
 }
 
 @media screen and (min-width: 1024px) {
