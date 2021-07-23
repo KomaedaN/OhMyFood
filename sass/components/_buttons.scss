@@ -1,3 +1,4 @@
+@import "../utils/keyframes";
 input{
     outline: none;
     background-color: inherit;
@@ -5,3 +6,33 @@ input{
     font-size: 1.2rem;
     width: 11rem;
 }
+
+
+.menu{
+    &__1{
+        animation: start 2s ease-in-out;
+    }
+    &__2{
+        animation: start 4s ease-in-out;
+    }
+    &__3{
+        animation: start 6s ease-in-out;
+    }
+    &__4{
+        animation: start 8s ease-in-out;
+    }
+}
+.check{
+    position: absolute;
+    left: 30%;
+    bottom: 21.8%;
+    background: aquamarine;
+    width: 70px;
+    height: 73px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+

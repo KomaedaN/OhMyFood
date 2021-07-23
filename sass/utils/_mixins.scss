@@ -29,14 +29,13 @@
     box-shadow: -3px 1px 16px 0px #353535a1;
 }
 @mixin heart {
-    position: absolute;
-    opacity: 0;
-    transform: scale(0.2);
+    transform: scale(1);
     transition: transform 500ms ease-in-out;   
         &:hover{
             opacity: 1;
             color: $color-primary;
-            transform: scale(1.1);
+            transform: scale(1.25);
+            font-weight: bold;
         } 
         
 }

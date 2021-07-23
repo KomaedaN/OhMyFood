@@ -63,14 +63,8 @@
                 margin-right: 2rem;
             }
         }
-        &__color{
-            @include heart; 
-                &:hover{
-                margin-left: -1px;
-                }
-                &:hover + .figucaption__border{
-                    visibility: hidden;
-                }
+        &__border{
+            @include heart;
         }
         
 }
