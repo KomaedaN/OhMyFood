@@ -10,9 +10,11 @@ body {
 @keyframes start {
   0% {
     opacity: 0;
+    transform: translateY(60px);
   }
   100% {
     opacity: 1;
+    transform: translateY(0);
   }
 }
 @keyframes loader {
@@ -70,6 +72,14 @@ body {
     transform: translateX(-60px);
   }
 }
+@keyframes puce {
+  from {
+    transform: translateY(-20px);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
 input {
   outline: none;
   background-color: inherit;
@@ -79,16 +89,16 @@ input {
 }
 
 .menu__1 {
-  animation: start 2s ease-in-out;
+  animation: start 1s ease-in-out;
 }
 .menu__2 {
-  animation: start 4s ease-in-out;
+  animation: start 2s ease-in-out;
 }
 .menu__3 {
-  animation: start 6s ease-in-out;
+  animation: start 3s ease-in-out;
 }
 .menu__4 {
-  animation: start 8s ease-in-out;
+  animation: start 4s ease-in-out;
 }
 
 .check {
@@ -115,9 +125,11 @@ input {
 @keyframes start {
   0% {
     opacity: 0;
+    transform: translateY(60px);
   }
   100% {
     opacity: 1;
+    transform: translateY(0);
   }
 }
 @keyframes loader {
@@ -173,6 +185,14 @@ input {
   }
   to {
     transform: translateX(-60px);
+  }
+}
+@keyframes puce {
+  from {
+    transform: translateY(-20px);
+  }
+  to {
+    transform: translateY(0);
   }
 }
 body {
@@ -351,9 +371,11 @@ header {
 @keyframes start {
   0% {
     opacity: 0;
+    transform: translateY(60px);
   }
   100% {
     opacity: 1;
+    transform: translateY(0);
   }
 }
 @keyframes loader {
@@ -409,6 +431,14 @@ header {
   }
   to {
     transform: translateX(-60px);
+  }
+}
+@keyframes puce {
+  from {
+    transform: translateY(-20px);
+  }
+  to {
+    transform: translateY(0);
   }
 }
 .main2 {

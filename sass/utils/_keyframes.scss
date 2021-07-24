@@ -1,9 +1,11 @@
 @keyframes start {
     0%{
         opacity: 0;
+        transform: translateY(60px);
     }
     100%{
         opacity: 1;
+        transform: translateY(0);
     }
 }
 
@@ -65,5 +67,14 @@
   }
   to{
     transform: translateX(-60px);
+  }
+}
+
+@keyframes puce{
+  from{
+    transform: translateY(-20px);
+  }
+  to{
+    transform: translateY(0);
   }
 }
