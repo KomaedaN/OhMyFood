@@ -1,5 +1,6 @@
 @import "../utils/keyframes";
 @import "../utils/variable";
+@import "../utils/mixins";
 body{
     margin: 0;
 }
@@ -17,12 +18,70 @@ body{
     animation: loader 2s ease-in-out 4s forwards;
     pointer-events: none;
         &__text{
-            top: 50%;
-            right: 50%;
-            position: absolute;
+            font-size: 2rem;
             font-family: Shrikhand, sans-serif;
+            animation: text-anime 0.5s infinite;
+            animation-direction: alternate;
+            display: flex;
+            justify-content: center;
+            margin-top: 25rem;
         }
   }
+
+.load{
+    display: flex;
+    justify-content: center;
+    margin-top: 3rem;
+        &__bar{
+        background-color: black;
+        height: 5rem;
+        width: 1rem;
+            &--1{
+                animation: load-bar 0.5s infinite;
+                animation-direction: alternate;
+                animation-delay: 200ms;
+                background: linear-gradient(19deg, rgba(153,226,208,1) 0%, rgba(153,226,208,1) 28%, rgba(11,61,62,1) 71%, rgba(2,21,22,1) 87%);
+                
+            }
+            &--2{
+                right: 38rem;
+                margin-left: 0.5rem;
+                animation: load-bar 0.5s infinite;
+                animation-direction: alternate;
+                animation-delay: 400ms;
+                background: linear-gradient(19deg, rgba(153,226,208,1) 0%, rgba(153,226,208,1) 28%, rgba(11,61,62,1) 71%, rgba(2,21,22,1) 87%);
+            }
+            &--3{
+                right: 36rem;
+                margin-left: 0.5rem;
+                animation: load-bar 0.5s infinite;
+                animation-direction: alternate;
+                animation-delay: 600ms;
+                background: linear-gradient(19deg, rgba(153,226,208,1) 0%, rgba(153,226,208,1) 28%, rgba(11,61,62,1) 71%, rgba(2,21,22,1) 87%);
+            }
+            &--4{
+                right: 34rem;
+                margin-left: 0.5rem;
+                animation: load-bar 0.5s infinite;
+                animation-direction: alternate;
+                animation-delay: 400ms;
+                background: linear-gradient(19deg, rgba(153,226,208,1) 0%, rgba(153,226,208,1) 28%, rgba(11,61,62,1) 71%, rgba(2,21,22,1) 87%);
+            }
+            &--5{
+                right: 32rem;
+                margin-left: 0.5rem;
+                animation: load-bar 0.5s infinite;
+                animation-direction: alternate;
+                animation-delay: 200ms;
+                background: linear-gradient(19deg, rgba(153,226,208,1) 0%, rgba(153,226,208,1) 28%, rgba(11,61,62,1) 71%, rgba(2,21,22,1) 87%);
+            }
+        }
+}
+
+
+//_Breakpoint
+
+
  
   
   
