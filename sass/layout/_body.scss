@@ -36,44 +36,45 @@ body{
         background-color: black;
         height: 5rem;
         width: 1rem;
+        border-radius: 0.2rem;
             &--1{
-                animation: load-bar 0.5s infinite;
+                animation: load-bar 0.5s infinite ease-in-out;
                 animation-direction: alternate;
-                animation-delay: 200ms;
-                background: linear-gradient(19deg, rgba(153,226,208,1) 0%, rgba(153,226,208,1) 28%, rgba(11,61,62,1) 71%, rgba(2,21,22,1) 87%);
+                animation-delay: 100ms;
+                background: black;
                 
             }
             &--2{
                 right: 38rem;
                 margin-left: 0.5rem;
-                animation: load-bar 0.5s infinite;
+                animation: load-bar 0.5s infinite ease-in-out;
                 animation-direction: alternate;
-                animation-delay: 400ms;
-                background: linear-gradient(19deg, rgba(153,226,208,1) 0%, rgba(153,226,208,1) 28%, rgba(11,61,62,1) 71%, rgba(2,21,22,1) 87%);
+                animation-delay: 300ms;
+                background: black;
             }
             &--3{
                 right: 36rem;
                 margin-left: 0.5rem;
-                animation: load-bar 0.5s infinite;
+                animation: load-bar 0.5s infinite ease-in-out;
                 animation-direction: alternate;
-                animation-delay: 600ms;
-                background: linear-gradient(19deg, rgba(153,226,208,1) 0%, rgba(153,226,208,1) 28%, rgba(11,61,62,1) 71%, rgba(2,21,22,1) 87%);
+                animation-delay: 500ms;
+                background: black;
             }
             &--4{
                 right: 34rem;
                 margin-left: 0.5rem;
-                animation: load-bar 0.5s infinite;
+                animation: load-bar 0.5s infinite ease-in-out;
                 animation-direction: alternate;
-                animation-delay: 400ms;
-                background: linear-gradient(19deg, rgba(153,226,208,1) 0%, rgba(153,226,208,1) 28%, rgba(11,61,62,1) 71%, rgba(2,21,22,1) 87%);
+                animation-delay: 300ms;
+                background: black;
             }
             &--5{
                 right: 32rem;
                 margin-left: 0.5rem;
-                animation: load-bar 0.5s infinite;
+                animation: load-bar 0.5s infinite ease-in-out;
                 animation-direction: alternate;
-                animation-delay: 200ms;
-                background: linear-gradient(19deg, rgba(153,226,208,1) 0%, rgba(153,226,208,1) 28%, rgba(11,61,62,1) 71%, rgba(2,21,22,1) 87%);
+                animation-delay: 100ms;
+                background: black;
             }
         }
 }

@@ -42,6 +42,34 @@ body {
     transform: scaleY(0.6);
   }
 }
+@keyframes check {
+  0% {
+    transform: scaleX(0);
+  }
+  20% {
+    opacity: 1;
+  }
+  100% {
+    transform: scaleX(1);
+    opacity: 1;
+  }
+}
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes price {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-60px);
+  }
+}
 input {
   outline: none;
   background-color: inherit;
@@ -65,16 +93,23 @@ input {
 
 .check {
   position: absolute;
-  left: 30%;
-  bottom: 21.8%;
   background: aquamarine;
-  width: 70px;
-  height: 73px;
+  width: 29px;
+  height: 44px;
   display: flex;
   align-items: center;
   justify-content: center;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
+  top: 0;
+  padding: 15px;
+  right: 0;
+  opacity: 0;
+}
+
+.circle {
+  font-size: 2rem;
+  color: white;
 }
 
 @keyframes start {
@@ -110,6 +145,34 @@ input {
   }
   100% {
     transform: scaleY(0.6);
+  }
+}
+@keyframes check {
+  0% {
+    transform: scaleX(0);
+  }
+  20% {
+    opacity: 1;
+  }
+  100% {
+    transform: scaleX(1);
+    opacity: 1;
+  }
+}
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes price {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-60px);
   }
 }
 body {
@@ -148,44 +211,45 @@ body {
   background-color: black;
   height: 5rem;
   width: 1rem;
+  border-radius: 0.2rem;
 }
 .load__bar--1 {
-  animation: load-bar 0.5s infinite;
+  animation: load-bar 0.5s infinite ease-in-out;
   animation-direction: alternate;
-  animation-delay: 200ms;
-  background: linear-gradient(19deg, #99e2d0 0%, #99e2d0 28%, #0b3d3e 71%, #021516 87%);
+  animation-delay: 100ms;
+  background: black;
 }
 .load__bar--2 {
   right: 38rem;
   margin-left: 0.5rem;
-  animation: load-bar 0.5s infinite;
+  animation: load-bar 0.5s infinite ease-in-out;
   animation-direction: alternate;
-  animation-delay: 400ms;
-  background: linear-gradient(19deg, #99e2d0 0%, #99e2d0 28%, #0b3d3e 71%, #021516 87%);
+  animation-delay: 300ms;
+  background: black;
 }
 .load__bar--3 {
   right: 36rem;
   margin-left: 0.5rem;
-  animation: load-bar 0.5s infinite;
+  animation: load-bar 0.5s infinite ease-in-out;
   animation-direction: alternate;
-  animation-delay: 600ms;
-  background: linear-gradient(19deg, #99e2d0 0%, #99e2d0 28%, #0b3d3e 71%, #021516 87%);
+  animation-delay: 500ms;
+  background: black;
 }
 .load__bar--4 {
   right: 34rem;
   margin-left: 0.5rem;
-  animation: load-bar 0.5s infinite;
+  animation: load-bar 0.5s infinite ease-in-out;
   animation-direction: alternate;
-  animation-delay: 400ms;
-  background: linear-gradient(19deg, #99e2d0 0%, #99e2d0 28%, #0b3d3e 71%, #021516 87%);
+  animation-delay: 300ms;
+  background: black;
 }
 .load__bar--5 {
   right: 32rem;
   margin-left: 0.5rem;
-  animation: load-bar 0.5s infinite;
+  animation: load-bar 0.5s infinite ease-in-out;
   animation-direction: alternate;
-  animation-delay: 200ms;
-  background: linear-gradient(19deg, #99e2d0 0%, #99e2d0 28%, #0b3d3e 71%, #021516 87%);
+  animation-delay: 100ms;
+  background: black;
 }
 
 header {
@@ -284,6 +348,69 @@ header {
   box-shadow: 2px 2px 9px 4px #000000;
 }
 
+@keyframes start {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes loader {
+  0% {
+    opacity: 1;
+  }
+  30% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes text-anime {
+  0% {
+    transform: scaleY(1);
+  }
+  100% {
+    transform: scaleY(2);
+  }
+}
+@keyframes load-bar {
+  0% {
+    transform: scaleY(1.2);
+  }
+  100% {
+    transform: scaleY(0.6);
+  }
+}
+@keyframes check {
+  0% {
+    transform: scaleX(0);
+  }
+  20% {
+    opacity: 1;
+  }
+  100% {
+    transform: scaleX(1);
+    opacity: 1;
+  }
+}
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes price {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-60px);
+  }
+}
 .main2 {
   border-top-left-radius: 2rem;
   border-top-right-radius: 2rem;
@@ -342,9 +469,13 @@ header {
   padding: 0.6rem;
   margin-bottom: 1rem;
   cursor: pointer;
+  position: relative;
 }
 .menu__puce h3 {
   margin: 0;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 .menu__flex {
   display: flex;
@@ -384,6 +515,25 @@ header {
   box-shadow: 2px 2px 9px 4px #000000;
 }
 
+.menu__puce:hover h3 {
+  width: 75%;
+}
+.menu__puce:hover .check {
+  transform-origin: right;
+  animation: check 800ms 100ms ease-in-out;
+  animation-fill-mode: forwards;
+}
+.menu__puce:hover .circle {
+  animation: rotate 1000ms 100ms ease-in-out;
+}
+.menu__puce:hover .price {
+  animation: price 800ms 100ms ease-in-out;
+  animation-fill-mode: forwards;
+}
+.menu__puce:hover .menu__flex p {
+  width: 70%;
+}
+
 @media screen and (min-width: 1024px) {
   .main2__container {
     width: 98%;
@@ -404,6 +554,13 @@ header {
 @media screen and (min-width: 768px) {
   .main2__title {
     justify-content: center;
+  }
+
+  .menu__puce:hover h3 {
+    width: 80%;
+  }
+  .menu__puce:hover .menu__flex p {
+    width: 68%;
   }
 }
 .operation {
@@ -479,6 +636,7 @@ header {
   box-shadow: -3px 1px 16px 0px #353535a1;
   background-color: white;
   border-radius: 1rem;
+  position: relative;
 }
 .restaurant__puce a {
   text-decoration: none;

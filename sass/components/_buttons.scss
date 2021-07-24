@@ -24,15 +24,21 @@ input{
 }
 .check{
     position: absolute;
-    left: 30%;
-    bottom: 21.8%;
     background: aquamarine;
-    width: 70px;
-    height: 73px;
+    width: 29px;
+    height: 44px;
     display: flex;
     align-items: center;
     justify-content: center;
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px;
+    top: 0;
+    padding: 15px;
+    right: 0;
+    opacity: 0;
+}
+.circle{
+    font-size: 2rem;
+    color: white;
 }
 

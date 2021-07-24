@@ -1,5 +1,6 @@
 @import "../utils/variable";
 @import "../utils/mixins";
+@import "../utils/keyframes";
 .main2{
     border-top-left-radius: 2rem;
     border-top-right-radius: 2rem;
@@ -52,8 +53,12 @@
             padding: 0.6rem;
             margin-bottom: 1rem;
             cursor: pointer;
+            position: relative;
                 h3{
                     margin: 0;
+                    white-space: nowrap;
+                    text-overflow: ellipsis;
+                    overflow: hidden;
                     }
         }
         &__flex{
@@ -79,6 +84,32 @@
             padding: 0 2rem;
         }
 }
+
+//_animation
+.menu__puce{
+    &:hover{
+        h3{
+            width: 75%;
+        }
+        .check{
+            transform-origin: right;
+            animation: check 800ms 100ms ease-in-out;
+            animation-fill-mode: forwards;
+        }
+        .circle{
+            animation: rotate 1000ms 100ms ease-in-out;
+        }
+        .price{
+            animation: price 800ms 100ms ease-in-out;
+            animation-fill-mode: forwards;
+        }
+        .menu__flex{
+            p{
+                width: 70%;
+            }
+        }
+    }
+}
 //_Breakpoints_Desktop
 @include desktop{
     .main2{
@@ -98,14 +129,27 @@
         &__puce{
             padding: 0.6rem 0.49rem;
         }
-    }
+    }    
 }
+
 
 //_Breakpoints_tablet
 @include tablet{
     .main2{
         &__title{
             justify-content: center;
+        }
+    }
+    .menu__puce{
+        &:hover{
+            h3{
+                width: 80%;
+            }
+            .menu__flex{
+                p{
+                    width: 68%;
+                }
+            }
         }
     }
 }
