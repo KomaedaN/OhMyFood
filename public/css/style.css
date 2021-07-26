@@ -209,7 +209,7 @@ body {
   position: fixed;
   background: linear-gradient(0deg, #9356DC 17%, #99E2D0 50%, #FF79DA 94%);
   line-height: 100%;
-  animation: loader 2s ease-in-out 4s forwards;
+  animation: loader 1.5s ease-in-out 1.5s forwards;
   pointer-events: none;
 }
 .loader__text {

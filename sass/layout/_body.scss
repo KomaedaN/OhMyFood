@@ -15,7 +15,7 @@ body{
     position: fixed;
     background: linear-gradient(0deg, $color-primary 17%, $color-tertiaire 50%, $color-secondary 94%);
     line-height: 100%;
-    animation: loader 2s ease-in-out 4s forwards;
+    animation: loader 1.5s ease-in-out 1.5s forwards;
     pointer-events: none;
         &__text{
             font-size: 2rem;
@@ -80,7 +80,7 @@ body{
 }
 
 
-//_Breakpoint
+
 
 
  
