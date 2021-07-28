@@ -80,6 +80,19 @@ body {
     transform: translateY(0);
   }
 }
+@keyframes heart-transition {
+  0% {
+    opacity: 0;
+    transform: scale(0);
+  }
+  10% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
 input {
   outline: none;
   background-color: inherit;
@@ -103,7 +116,7 @@ input {
 
 .check {
   position: absolute;
-  background: aquamarine;
+  background: #99E2D0;
   width: 29px;
   height: 44px;
   display: flex;
@@ -193,6 +206,19 @@ input {
   }
   to {
     transform: translateY(0);
+  }
+}
+@keyframes heart-transition {
+  0% {
+    opacity: 0;
+    transform: scale(0);
+  }
+  10% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
   }
 }
 body {
@@ -365,7 +391,9 @@ header {
   box-shadow: -3px 1px 16px 0px #353535a1;
 }
 .about button:hover {
-  box-shadow: 2px 2px 9px 4px #000000;
+  box-shadow: 1px 2px 15px 0px #000000;
+  background-color: #a978e3;
+  background-blend-mode: lighten;
 }
 
 @keyframes start {
@@ -441,6 +469,19 @@ header {
     transform: translateY(0);
   }
 }
+@keyframes heart-transition {
+  0% {
+    opacity: 0;
+    transform: scale(0);
+  }
+  10% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
 .main2 {
   border-top-left-radius: 2rem;
   border-top-right-radius: 2rem;
@@ -453,15 +494,14 @@ header {
   width: 90%;
   margin: auto;
 }
-.main2__border {
-  transform: scale(1);
-  transition: transform 500ms ease-in-out;
-}
 .main2__border:hover {
-  opacity: 1;
-  color: #9356DC;
-  transform: scale(1.25);
+  opacity: 0;
+  -webkit-text-fill-color: transparent;
+  animation: heart-transition 0.4s 0.1s ease-in-out forwards;
   font-weight: bold;
+  background: linear-gradient(182deg, #9356DC 20%, #FF79DA 75%);
+  background-clip: text;
+  -webkit-background-clip: text;
 }
 .main2__title {
   display: flex;
@@ -542,7 +582,9 @@ header {
   padding: 0 2rem;
 }
 .menu button:hover {
-  box-shadow: 2px 2px 9px 4px #000000;
+  box-shadow: 1px 2px 15px 0px #000000;
+  background-color: #a978e3;
+  background-blend-mode: lighten;
 }
 
 .menu__puce:hover h3 {
@@ -714,15 +756,14 @@ header {
   margin-top: -1rem;
   margin-right: 2rem;
 }
-.figucaption__border {
-  transform: scale(1);
-  transition: transform 500ms ease-in-out;
-}
 .figucaption__border:hover {
-  opacity: 1;
-  color: #9356DC;
-  transform: scale(1.25);
+  opacity: 0;
+  -webkit-text-fill-color: transparent;
+  animation: heart-transition 0.4s 0.1s ease-in-out forwards;
   font-weight: bold;
+  background: linear-gradient(182deg, #9356DC 20%, #FF79DA 75%);
+  background-clip: text;
+  -webkit-background-clip: text;
 }
 
 @media screen and (min-width: 1024px) {

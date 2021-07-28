@@ -1,4 +1,5 @@
 @import "../utils/keyframes";
+@import "../utils/variable";
 input{
     outline: none;
     background-color: inherit;
@@ -24,7 +25,7 @@ input{
 }
 .check{
     position: absolute;
-    background: aquamarine;
+    background: $color-tertiaire;
     width: 29px;
     height: 44px;
     display: flex;
